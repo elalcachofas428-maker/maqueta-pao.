@@ -1,0 +1,1554 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Psicopedagogía · Paola Zabala</title>
+<!-- SEO -->
+<meta name="description" content="Psicopedagogía Paola Zabala · Evaluación, diagnóstico y acompañamiento del aprendizaje en niños, adolescentes y adultos. Buenos Aires, Argentina. Presencial y online.">
+<meta name="keywords" content="psicopedagogía, psicopedagoga, dificultades de aprendizaje, dislexia, TDAH, evaluación psicopedagógica, Buenos Aires, Paola Zabala">
+<meta name="author" content="Paola Zabala">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://psicopedagogiapaolazo.com.ar">
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Psicopedagogía · Paola Zabala">
+<meta property="og:description" content="Acompañamiento personalizado para potenciar el aprendizaje. Buenos Aires.">
+<meta property="og:url" content="https://psicopedagogiapaolazo.com.ar">
+<meta property="og:image" content="/assets/og-image.jpg">
+<meta property="og:locale" content="es_AR">
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Psicopedagogía · Paola Zabala">
+<meta name="twitter:description" content="Acompañamiento personalizado para potenciar el aprendizaje.">
+<!-- Favicon -->
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📚</text></svg>">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --magenta: #FF00CC;
+    --magenta-dark: #CC00A3;
+    --magenta-light: #FFD6F5;
+    --purple: #6B3FA0;
+    --purple-dark: #4A2B72;
+    --purple-light: #EDE0FF;
+    --beige: #F5E6D3;
+    --beige-dark: #E8C8A0;
+    --white: #FFFFFF;
+    --text-dark: #2A1245;
+    --text-mid: #5A4070;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: #FAFAFA;
+    color: var(--text-dark);
+    overflow-x: hidden;
+  }
+
+  /* ────── NAVBAR ────── */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 1rem 3rem;
+    background: rgba(255,255,255,0.85);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255,0,204,0.12);
+    transition: all 0.4s ease;
+  }
+  nav.scrolled {
+    padding: 0.6rem 3rem;
+    background: rgba(255,255,255,0.97);
+    box-shadow: 0 2px 24px rgba(107,63,160,0.1);
+  }
+  .nav-logo {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 900;
+    font-size: 1.3rem;
+    color: var(--magenta);
+    letter-spacing: -0.5px;
+  }
+  .nav-links { display: flex; gap: 2.5rem; list-style: none; }
+  .nav-links a {
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--text-mid);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    transition: color 0.2s;
+  }
+  .nav-links a:hover { color: var(--magenta); }
+
+  /* ────── HERO ────── */
+  .hero {
+    min-height: 100vh;
+    display: flex; align-items: center; justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 8rem 2rem 4rem;
+    position: relative;
+    overflow: hidden;
+    background: var(--white);
+  }
+
+  .hero-blobs {
+    position: absolute; inset: 0; pointer-events: none; overflow: hidden;
+  }
+  .blob {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(60px);
+    opacity: 0.18;
+    animation: float 8s ease-in-out infinite;
+  }
+  .blob-1 {
+    width: 500px; height: 500px;
+    background: var(--magenta);
+    top: -150px; right: -150px;
+    animation-delay: 0s;
+  }
+  .blob-2 {
+    width: 400px; height: 400px;
+    background: var(--purple);
+    bottom: -100px; left: -100px;
+    animation-delay: 3s;
+  }
+  .blob-3 {
+    width: 300px; height: 300px;
+    background: var(--beige-dark);
+    top: 40%; left: 30%;
+    animation-delay: 5s;
+  }
+  @keyframes float {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    33%       { transform: translate(20px, -30px) scale(1.05); }
+    66%       { transform: translate(-15px, 20px) scale(0.97); }
+  }
+
+  .hero-badge {
+    display: inline-flex; align-items: center; gap: 0.5rem;
+    background: var(--purple-light);
+    color: var(--purple-dark);
+    border-radius: 100px;
+    padding: 0.4rem 1.2rem;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp 0.7s 0.2s forwards;
+  }
+
+  .hero-logo-img {
+    width: 220px;
+    opacity: 0;
+    transform: scale(0.8) translateY(10px);
+    animation: popIn 0.8s 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+    margin-bottom: 1.5rem;
+    filter: drop-shadow(0 12px 32px rgba(255,0,204,0.18));
+  }
+
+  .hero-logo-placeholder {
+    opacity: 0;
+    transform: scale(0.95) translateY(15px);
+    animation: popIn 0.8s 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  .hero-logo-placeholder h1 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 900;
+    font-size: clamp(2.5rem, 7vw, 4.5rem);
+    color: var(--magenta);
+    line-height: 1;
+    letter-spacing: -2px;
+    margin: 0;
+  }
+  .hero-logo-placeholder .logo-name {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: clamp(1rem, 2.5vw, 1.4rem);
+    color: var(--purple);
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    margin-top: 0.2rem;
+  }
+
+  .hero-tagline {
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    color: var(--text-mid);
+    max-width: 520px;
+    line-height: 1.7;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp 0.8s 1s forwards;
+    margin-bottom: 3rem;
+  }
+
+  .hero-cta {
+    display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center;
+    opacity: 0;
+    animation: fadeUp 0.8s 1.2s forwards;
+  }
+  .btn-primary {
+    background: linear-gradient(135deg, var(--magenta), var(--magenta-dark));
+    color: white;
+    border: none;
+    padding: 1rem 2.5rem;
+    border-radius: 100px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 0.95rem;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: 0 8px 30px rgba(255,0,204,0.3);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 40px rgba(255,0,204,0.4);
+  }
+  .btn-secondary {
+    background: transparent;
+    color: var(--purple);
+    border: 2px solid var(--purple);
+    padding: 1rem 2.5rem;
+    border-radius: 100px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 0.95rem;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.2s;
+  }
+  .btn-secondary:hover {
+    background: var(--purple);
+    color: white;
+  }
+
+  .scroll-indicator {
+    position: absolute; bottom: 2.5rem;
+    display: flex; flex-direction: column; align-items: center; gap: 0.4rem;
+    opacity: 0;
+    animation: fadeUp 0.8s 1.6s forwards;
+  }
+  .scroll-indicator span {
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--text-mid);
+  }
+  .scroll-line {
+    width: 1px; height: 50px;
+    background: linear-gradient(to bottom, var(--magenta), transparent);
+    animation: scrollPulse 1.5s ease-in-out infinite;
+  }
+  @keyframes scrollPulse {
+    0%, 100% { opacity: 0.3; transform: scaleY(1); }
+    50%       { opacity: 1;   transform: scaleY(1.1); }
+  }
+
+  @keyframes fadeUp {
+    to { opacity: 1; transform: translateY(0) scale(1); }
+  }
+  @keyframes popIn {
+    to { opacity: 1; transform: scale(1) translateY(0); }
+  }
+
+  /* ────── SECTION SHARED ────── */
+  section { padding: 7rem 2rem; }
+
+  .container { max-width: 1100px; margin: 0 auto; }
+
+  .section-label {
+    display: inline-block;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--magenta);
+    margin-bottom: 0.8rem;
+  }
+  .section-title {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 900;
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    color: var(--text-dark);
+    line-height: 1.1;
+    margin-bottom: 1.2rem;
+    letter-spacing: -1px;
+  }
+  .section-title span { color: var(--magenta); }
+  .section-desc {
+    font-size: 1.05rem;
+    color: var(--text-mid);
+    line-height: 1.8;
+    max-width: 600px;
+  }
+
+  /* ────── ABOUT ────── */
+  .about { background: var(--white); }
+
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    align-items: center;
+  }
+
+  .about-visual {
+    position: relative;
+  }
+  .about-card-big {
+    background: linear-gradient(135deg, var(--purple-light), var(--magenta-light));
+    border-radius: 32px;
+    padding: 3rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .about-card-big::before {
+    content: '';
+    position: absolute;
+    width: 200px; height: 200px;
+    background: rgba(255,255,255,0.4);
+    border-radius: 50%;
+    top: -60px; right: -60px;
+  }
+  .about-emoji {
+    font-size: 5rem;
+    display: block;
+    margin-bottom: 1rem;
+    filter: drop-shadow(0 8px 20px rgba(107,63,160,0.2));
+  }
+  .about-card-stat {
+    position: absolute;
+    background: white;
+    border-radius: 20px;
+    padding: 1rem 1.5rem;
+    box-shadow: 0 8px 32px rgba(107,63,160,0.15);
+    font-family: 'Nunito', sans-serif;
+  }
+  .about-card-stat.top-right {
+    top: -1.5rem; right: -1.5rem;
+    transform: rotate(3deg);
+  }
+  .about-card-stat.bottom-left {
+    bottom: -1.5rem; left: -1.5rem;
+    transform: rotate(-3deg);
+  }
+  .stat-number {
+    font-size: 2rem;
+    font-weight: 900;
+    color: var(--magenta);
+    display: block;
+    line-height: 1;
+  }
+  .stat-label {
+    font-size: 0.72rem;
+    color: var(--text-mid);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-weight: 600;
+  }
+
+  .about-list {
+    list-style: none;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .about-list li {
+    display: flex; align-items: flex-start; gap: 0.8rem;
+    font-size: 0.95rem;
+    color: var(--text-mid);
+    line-height: 1.6;
+  }
+  .check-icon {
+    width: 22px; height: 22px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--magenta), var(--purple));
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+  .check-icon::after {
+    content: '✓';
+    color: white;
+    font-size: 0.7rem;
+    font-weight: 700;
+  }
+
+  /* ────── SERVICES ────── */
+  .services { background: var(--beige); }
+
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 4rem;
+  }
+
+  .service-card {
+    background: white;
+    border-radius: 24px;
+    padding: 2.5rem 2rem;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: default;
+  }
+  .service-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 60px rgba(107,63,160,0.15);
+  }
+  .service-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 24px;
+    border: 2px solid transparent;
+    background: linear-gradient(135deg, var(--magenta), var(--purple)) border-box;
+    -webkit-mask: linear-gradient(white, white) padding-box, linear-gradient(white, white);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  .service-card:hover::before { opacity: 1; }
+
+  .service-icon-wrap {
+    width: 64px; height: 64px;
+    border-radius: 18px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  .icon-purple { background: var(--purple-light); }
+  .icon-magenta { background: var(--magenta-light); }
+  .icon-beige { background: var(--beige); }
+
+  .service-title {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    font-size: 1.15rem;
+    color: var(--text-dark);
+    margin-bottom: 0.7rem;
+  }
+  .service-desc {
+    font-size: 0.88rem;
+    color: var(--text-mid);
+    line-height: 1.7;
+  }
+
+  /* ────── STORE ────── */
+  .store { background: #F9F4FF; }
+  .store-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+  .product-card {
+    background: white;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(107,63,160,0.06);
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+  }
+  .product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 40px rgba(107,63,160,0.12);
+  }
+  .product-img {
+    width: 100%;
+    height: 220px;
+    background: var(--purple-light);
+    object-fit: cover;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.2rem;
+    color: var(--purple-dark);
+    text-align: center;
+    padding: 1rem;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+  }
+  .product-content {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+  .product-title {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    font-size: 1.25rem;
+    color: var(--text-dark);
+    margin-bottom: 0.5rem;
+    line-height: 1.3;
+  }
+  .product-price {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 900;
+    font-size: 1.5rem;
+    color: var(--magenta);
+    margin-bottom: 1rem;
+    display: flex; align-items: center; gap: 0.5rem;
+  }
+  .product-price-old {
+    font-size: 0.95rem;
+    color: var(--text-mid);
+    text-decoration: line-through;
+    font-weight: 600;
+  }
+  .product-desc {
+    font-size: 0.85rem;
+    color: var(--text-mid);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    flex: 1;
+    white-space: pre-line;
+  }
+  .product-btn {
+    width: 100%;
+    text-align: center;
+    padding: 0.9rem;
+    border-radius: 12px;
+    background: linear-gradient(135deg, var(--magenta), var(--purple));
+    color: white;
+    font-weight: 700;
+    font-size: 0.95rem;
+    text-decoration: none;
+    transition: opacity 0.2s, transform 0.2s;
+    box-shadow: 0 4px 15px rgba(255,0,204,0.3);
+  }
+  .product-btn:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+  }
+
+  /* ────── FOR WHOM ────── */
+  .for-whom { background: var(--white); }
+
+  .pills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 3rem;
+  }
+  .pill {
+    background: var(--purple-light);
+    color: var(--purple-dark);
+    border-radius: 100px;
+    padding: 0.8rem 1.8rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    display: flex; align-items: center; gap: 0.6rem;
+    transition: all 0.25s;
+    cursor: default;
+  }
+  .pill:hover {
+    background: var(--purple);
+    color: white;
+    transform: scale(1.04);
+  }
+  .pill-alt { background: var(--magenta-light); color: var(--magenta-dark); }
+  .pill-alt:hover { background: var(--magenta); color: white; }
+
+  .for-whom-layout {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 5rem;
+    align-items: center;
+  }
+
+  .process-steps {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  .step {
+    display: flex;
+    gap: 1.5rem;
+    position: relative;
+  }
+  .step-left {
+    display: flex; flex-direction: column; align-items: center;
+  }
+  .step-num {
+    width: 40px; height: 40px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--magenta), var(--purple));
+    color: white;
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 900;
+    font-size: 0.9rem;
+    flex-shrink: 0;
+  }
+  .step-line {
+    width: 2px; flex: 1; min-height: 30px;
+    background: linear-gradient(to bottom, var(--magenta-light), var(--purple-light));
+    margin: 6px 0;
+  }
+  .step-content { padding-bottom: 2.5rem; }
+  .step-title {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    font-size: 1rem;
+    color: var(--text-dark);
+    margin-bottom: 0.3rem;
+  }
+  .step-desc { font-size: 0.85rem; color: var(--text-mid); line-height: 1.6; }
+
+  /* ────── CTA BAND ────── */
+  .cta-band {
+    background: linear-gradient(135deg, var(--purple-dark) 0%, var(--magenta-dark) 100%);
+    padding: 6rem 2rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .cta-band::before {
+    content: 'Psicopedagogía';
+    position: absolute;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 900;
+    font-size: 18vw;
+    color: rgba(255,255,255,0.04);
+    white-space: nowrap;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    letter-spacing: -4px;
+  }
+  .cta-band h2 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 900;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    color: white;
+    letter-spacing: -1px;
+    margin-bottom: 1.2rem;
+  }
+  .cta-band p {
+    font-size: 1.05rem;
+    color: rgba(255,255,255,0.8);
+    margin-bottom: 3rem;
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .btn-white {
+    background: white;
+    color: var(--magenta-dark);
+    border: none;
+    padding: 1.1rem 3rem;
+    border-radius: 100px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: 0 8px 40px rgba(0,0,0,0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .btn-white:hover {
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 16px 60px rgba(0,0,0,0.3);
+  }
+
+  /* ────── CONTACT ────── */
+  .contact { background: #FAFAFA; }
+
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: start;
+  }
+
+  .contact-info-item {
+    display: flex; align-items: center; gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  .contact-icon {
+    width: 48px; height: 48px;
+    border-radius: 14px;
+    background: var(--magenta-light);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.3rem;
+    flex-shrink: 0;
+  }
+  .contact-info-text strong {
+    display: block;
+    font-weight: 600;
+    font-size: 0.85rem;
+    color: var(--text-dark);
+    margin-bottom: 0.1rem;
+  }
+  .contact-info-text span {
+    font-size: 0.85rem;
+    color: var(--text-mid);
+  }
+
+  .contact-form {
+    background: white;
+    border-radius: 28px;
+    padding: 2.5rem;
+    box-shadow: 0 4px 40px rgba(107,63,160,0.08);
+  }
+  .form-group { margin-bottom: 1.2rem; }
+  .form-group label {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    letter-spacing: 0.05em;
+    margin-bottom: 0.4rem;
+    text-transform: uppercase;
+  }
+  .form-group input,
+  .form-group textarea,
+  .form-group select {
+    width: 100%;
+    padding: 0.85rem 1rem;
+    border: 1.5px solid #E8E0F0;
+    border-radius: 12px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+    color: var(--text-dark);
+    background: #FAFAFA;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+  }
+  .form-group input:focus,
+  .form-group textarea:focus,
+  .form-group select:focus {
+    border-color: var(--magenta);
+    box-shadow: 0 0 0 3px rgba(255,0,204,0.1);
+  }
+  .form-group textarea { resize: vertical; min-height: 100px; }
+
+  /* ────── FOOTER ────── */
+  footer {
+    background: var(--text-dark);
+    padding: 5rem 2rem 2rem;
+    color: white;
+  }
+  .footer-grid {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    gap: 4rem;
+    text-align: left;
+  }
+  .footer-brand .footer-logo {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    text-align: left;
+  }
+  .footer-brand p {
+    font-size: 0.9rem;
+    color: rgba(255,255,255,0.6);
+    line-height: 1.6;
+    margin-bottom: 2rem;
+  }
+  .footer-col-title {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    font-size: 1.1rem;
+    color: white;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+  .footer-links { list-style: none; padding: 0; }
+  .footer-links li { margin-bottom: 0.8rem; }
+  .footer-links a {
+    color: rgba(255,255,255,0.6);
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.2s;
+  }
+  .footer-links a:hover { color: var(--magenta); }
+  
+  .footer-socials { display: flex; gap: 1rem; margin-top: 1rem; }
+  .social-link {
+    width: 40px; height: 40px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    color: white; text-decoration: none;
+    transition: all 0.3s;
+  }
+  .social-link:hover {
+    background: var(--magenta);
+    transform: translateY(-3px);
+  }
+
+  .footer-bottom {
+    max-width: 1100px;
+    margin: 4rem auto 0;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.85rem;
+    color: rgba(255,255,255,0.4);
+  }
+
+  @media (max-width: 900px) {
+    .footer-grid { grid-template-columns: 1fr 1fr; gap: 3rem; }
+    .footer-brand { grid-column: span 2; }
+  }
+  @media (max-width: 600px) {
+    .footer-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+    .footer-brand { grid-column: span 1; }
+    .footer-bottom { flex-direction: column; gap: 1rem; text-align: center; }
+  }
+
+  /* ────── SCROLL ANIMATIONS ────── */
+  .reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+  }
+  .reveal.from-left {
+    transform: translateX(-50px);
+  }
+  .reveal.from-right {
+    transform: translateX(50px);
+  }
+  .reveal.scale-in {
+    transform: scale(0.9);
+  }
+  .reveal.visible {
+    opacity: 1;
+    transform: none;
+  }
+
+  .stagger > * {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  .stagger.visible > * { opacity: 1; transform: none; }
+  .stagger.visible > *:nth-child(1) { transition-delay: 0s; }
+  .stagger.visible > *:nth-child(2) { transition-delay: 0.1s; }
+  .stagger.visible > *:nth-child(3) { transition-delay: 0.2s; }
+  .stagger.visible > *:nth-child(4) { transition-delay: 0.3s; }
+  .stagger.visible > *:nth-child(5) { transition-delay: 0.4s; }
+  .stagger.visible > *:nth-child(6) { transition-delay: 0.5s; }
+
+  /* ────── PARALLAX STRIP ────── */
+  .parallax-strip {
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 1.5rem 0;
+    background: var(--magenta);
+  }
+  .strip-inner {
+    display: inline-flex;
+    gap: 3rem;
+    animation: stripScroll 18s linear infinite;
+    white-space: nowrap;
+  }
+  .strip-item {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    font-size: 1rem;
+    color: rgba(255,255,255,0.9);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    display: flex; align-items: center; gap: 1rem;
+    flex-shrink: 0;
+  }
+  .strip-dot {
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.5);
+    flex-shrink: 0;
+  }
+  @keyframes stripScroll {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
+  }
+
+  /* ────── RESPONSIVE ────── */
+  @media (max-width: 768px) {
+    nav { padding: 1rem 1.5rem; }
+    .nav-links {
+      display: none;
+      position: absolute; top: 100%; left: 0; right: 0;
+      flex-direction: column; gap: 0;
+      background: white;
+      box-shadow: 0 8px 32px rgba(107,63,160,0.15);
+      padding: 1rem 0;
+      opacity: 0; transform: translateY(-10px);
+      transition: opacity 0.3s, transform 0.3s;
+    }
+    .nav-links.open { display: flex; opacity: 1; transform: translateY(0); }
+    .nav-links li { text-align: center; }
+    .nav-links a { display: block; padding: 0.8rem 1.5rem; }
+    .hamburger { display: flex; }
+    .about-grid, .for-whom-layout, .contact-grid {
+      grid-template-columns: 1fr; gap: 3rem;
+    }
+    .services-grid { grid-template-columns: 1fr; }
+    .about-card-stat.top-right { top: -1rem; right: -0.5rem; }
+    .about-card-stat.bottom-left { bottom: -1rem; left: -0.5rem; }
+  }
+
+  /* ────── HAMBURGER ────── */
+  .hamburger {
+    display: none; flex-direction: column; gap: 5px;
+    background: none; border: none; cursor: pointer; padding: 4px; z-index: 101;
+  }
+  .hamburger span {
+    display: block; width: 24px; height: 2px; background: var(--text-dark);
+    border-radius: 2px; transition: all 0.3s;
+  }
+  .hamburger.active span:nth-child(1) { transform: rotate(45deg) translate(5px,5px); }
+  .hamburger.active span:nth-child(2) { opacity: 0; }
+  .hamburger.active span:nth-child(3) { transform: rotate(-45deg) translate(5px,-5px); }
+
+  /* ────── WHATSAPP FLOAT ────── */
+  .whatsapp-float {
+    position: fixed; bottom: 24px; right: 24px; z-index: 999;
+    width: 60px; height: 60px; border-radius: 50%;
+    background: #25D366; display: flex; align-items: center; justify-content: center;
+    box-shadow: 0 4px 20px rgba(37,211,102,0.4);
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-decoration: none;
+  }
+  .whatsapp-float:hover {
+    transform: scale(1.08);
+    box-shadow: 0 6px 30px rgba(37,211,102,0.5);
+  }
+  .whatsapp-float svg { width: 32px; height: 32px; fill: white; }
+  .whatsapp-tooltip {
+    position: absolute; right: 70px; top: 50%; transform: translateY(-50%);
+    background: #333; color: white; padding: 6px 12px; border-radius: 8px;
+    font-size: 0.78rem; white-space: nowrap; opacity: 0; pointer-events: none;
+    transition: opacity 0.2s;
+  }
+  .whatsapp-float:hover .whatsapp-tooltip { opacity: 1; }
+  .whatsapp-pulse {
+    position: absolute; inset: -4px; border-radius: 50%;
+    border: 3px solid #25D366; animation: waPulse 2s ease-out infinite;
+  }
+  @keyframes waPulse {
+    0% { transform: scale(1); opacity: 0.6; }
+    100% { transform: scale(1.5); opacity: 0; }
+  }
+
+  /* ────── FORM FEEDBACK ────── */
+  .form-message {
+    margin-top: 1rem; padding: 0.8rem 1rem; border-radius: 12px;
+    font-size: 0.85rem; font-weight: 500; display: none;
+    animation: fadeUp 0.4s forwards;
+  }
+  .form-message.success { display: block; background: #e6f9ed; color: #1a7d3f; border: 1px solid #b3e6c7; }
+  .form-message.error { display: block; background: #fde8e8; color: #c53030; border: 1px solid #f5b3b3; }
+  .btn-loading { opacity: 0.7; pointer-events: none; }
+  .spinner { display: inline-block; width: 16px; height: 16px; border: 2px solid rgba(255,255,255,0.3); border-top-color: white; border-radius: 50%; animation: spin 0.6s linear infinite; vertical-align: middle; margin-right: 8px; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+
+
+  /* ────── SKIP TO CONTENT ────── */
+  .skip-link {
+    position: absolute; top: -100px; left: 0; background: var(--magenta);
+    color: white; padding: 0.8rem 1.5rem; z-index: 200; font-weight: 600;
+    transition: top 0.2s;
+  }
+  .skip-link:focus { top: 0; }
+</style>
+</head>
+<body>
+
+<a href="#main-content" class="skip-link">Ir al contenido principal</a>
+<noscript><div style="background:#FF00CC;color:white;text-align:center;padding:1rem;font-family:sans-serif;">Este sitio funciona mejor con JavaScript habilitado. Por favor, activalo en tu navegador.</div></noscript>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <div class="nav-logo">Psicopedagogía · PZ</div>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#sobre">Sobre mí</a></li>
+    <li><a href="#servicios">Servicios</a></li>
+    <li><a href="#proceso">Proceso</a></li>
+    <li><a href="#materiales">Materiales</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="Abrir menú de navegación">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-blobs">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+
+  <div class="hero-badge">✨ Aprendizaje · Bienestar · Crecimiento</div>
+
+  <!-- LOGO PLACEHOLDER (Hasta que se restaure logo.png) -->
+  <div class="hero-logo-placeholder">
+    <h1>Psicopedagogía</h1>
+    <div class="logo-name">Paola Zabala</div>
+  </div>
+  <p class="hero-tagline">
+    Acompañamiento personalizado para potenciar el aprendizaje,
+    superar dificultades y descubrir las capacidades únicas de cada persona.
+  </p>
+
+  <div class="hero-cta">
+    <a href="#contacto" class="btn-primary">Solicitar consulta</a>
+    <a href="#servicios" class="btn-secondary">Ver servicios</a>
+  </div>
+
+  <div class="scroll-indicator">
+    <span>Deslizá</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- PARALLAX STRIP -->
+<div class="parallax-strip">
+  <div class="strip-inner">
+    <span class="strip-item">Evaluación psicopedagógica <span class="strip-dot"></span></span>
+    <span class="strip-item">Dificultades de aprendizaje <span class="strip-dot"></span></span>
+    <span class="strip-item">Atención y concentración <span class="strip-dot"></span></span>
+    <span class="strip-item">Lectoescritura <span class="strip-dot"></span></span>
+    <span class="strip-item">Acompañamiento escolar <span class="strip-dot"></span></span>
+    <span class="strip-item">Orientación vocacional <span class="strip-dot"></span></span>
+    <!-- duplicated for seamless loop -->
+    <span class="strip-item">Evaluación psicopedagógica <span class="strip-dot"></span></span>
+    <span class="strip-item">Dificultades de aprendizaje <span class="strip-dot"></span></span>
+    <span class="strip-item">Atención y concentración <span class="strip-dot"></span></span>
+    <span class="strip-item">Lectoescritura <span class="strip-dot"></span></span>
+    <span class="strip-item">Acompañamiento escolar <span class="strip-dot"></span></span>
+    <span class="strip-item">Orientación vocacional <span class="strip-dot"></span></span>
+  </div>
+</div>
+
+
+
+<!-- ABOUT -->
+<main id="main-content" role="main">
+<section class="about" id="sobre">
+  <div class="container">
+    <div class="about-grid">
+
+      <div class="about-visual reveal scale-in">
+        <div class="about-card-big">
+          <span class="about-emoji">📚</span>
+          <p style="font-family:'Nunito',sans-serif;font-weight:800;font-size:1.2rem;color:var(--purple-dark);">Cada mente aprende diferente</p>
+          <p style="font-size:0.85rem;color:var(--text-mid);margin-top:0.5rem;line-height:1.6;">y merece un acompañamiento único.</p>
+        </div>
+        <div class="about-card-stat top-right">
+          <span class="stat-number">+10</span>
+          <span class="stat-label">Años de experiencia</span>
+        </div>
+        <div class="about-card-stat bottom-left">
+          <span class="stat-number">💜</span>
+          <span class="stat-label">Con amor</span>
+        </div>
+      </div>
+
+      <div class="reveal from-right">
+        <span class="section-label">¿Qué es la psicopedagogía?</span>
+        <h2 class="section-title">Aprender es un <span>camino</span>, no una carrera</h2>
+        <p class="section-desc">
+          La psicopedagogía estudia cómo aprendemos, detecta dificultades y diseña estrategias 
+          personalizadas para que cada persona alcance su máximo potencial educativo y emocional.
+        </p>
+        <ul class="about-list">
+          <li><div class="check-icon"></div>Evaluación integral del proceso de aprendizaje</li>
+          <li><div class="check-icon"></div>Detección temprana de dificultades (dislexia, TDAH, etc.)</li>
+          <li><div class="check-icon"></div>Estrategias personalizadas para cada perfil cognitivo</li>
+          <li><div class="check-icon"></div>Trabajo articulado con familia y escuela</li>
+          <li><div class="check-icon"></div>Fortalecimiento de la autoestima y motivación</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="servicios">
+  <div class="container">
+    <div class="reveal" style="text-align:center;max-width:600px;margin:0 auto;">
+      <span class="section-label">¿Qué ofrezco?</span>
+      <h2 class="section-title">Mis <span>servicios</span></h2>
+      <p class="section-desc" style="margin:0 auto;">
+        Cada servicio está diseñado para acompañar de manera integral el proceso 
+        de aprendizaje, desde la infancia hasta la adultez.
+      </p>
+    </div>
+
+    <div class="services-grid stagger">
+      <div class="service-card">
+        <div class="service-icon-wrap icon-purple">📋</div>
+        <div class="service-title">Admisión psicopedagógica</div>
+        <p class="service-desc">Primera entrevista para conocer el motivo de consulta, evaluar necesidades y planificar el acompañamiento adecuado.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon-wrap icon-magenta">🧩</div>
+        <div class="service-title">Evaluación y tratamiento psicopedagógico</div>
+        <p class="service-desc">Diagnóstico y abordaje de dificultades de aprendizaje con estrategias personalizadas para cada paciente.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon-wrap icon-beige">🏫</div>
+        <div class="service-title">Orientación a padres y docentes</div>
+        <p class="service-desc">Asesoramiento integral y trabajo en equipo con la familia y la escuela para potenciar el desarrollo.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon-wrap icon-magenta">🎯</div>
+        <div class="service-title">Orientación vocacional y reorientación</div>
+        <p class="service-desc">Acompañamiento en la elección de carreras u oficios, descubriendo intereses, habilidades y proyecto de vida.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon-wrap icon-purple">📖</div>
+        <div class="service-title">Talleres de alfabetización, lectura y escritura</div>
+        <p class="service-desc">Espacios lúdicos y dinámicos para fortalecer la lectoescritura y la comprensión desde edades tempranas.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon-wrap icon-beige">🧠</div>
+        <div class="service-title">Atención y Funciones Ejecutivas</div>
+        <p class="service-desc">Trabajo específico en organización, planificación, memoria de trabajo y autorregulación para potenciar el rendimiento académico.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOR WHOM + PROCESS -->
+<section class="for-whom" id="proceso">
+  <div class="container">
+    <div class="for-whom-layout">
+
+      <div class="reveal from-left">
+        <span class="section-label">¿Para quién?</span>
+        <h2 class="section-title">Acompaño a <span>todas</span> las edades</h2>
+        <p class="section-desc">Trabajo con niños, adolescentes y adultos que enfrentan desafíos en su proceso de aprendizaje.</p>
+        <div class="pills-grid">
+          <div class="pill">🧒 Niños (4-12 años)</div>
+          <div class="pill pill-alt">🧑 Adolescentes</div>
+          <div class="pill">👩 Adultos</div>
+          <div class="pill pill-alt">👨‍👩‍👧 Familias</div>
+          <div class="pill">📚 Estudiantes universitarios</div>
+          <div class="pill pill-alt">🍎 Docentes</div>
+        </div>
+      </div>
+
+      <div class="reveal from-right">
+        <span class="section-label">Cómo trabajo</span>
+        <h2 class="section-title">El <span>proceso</span></h2>
+        <div class="process-steps">
+          <div class="step">
+            <div class="step-left">
+              <div class="step-num">1</div>
+              <div class="step-line"></div>
+            </div>
+            <div class="step-content">
+              <div class="step-title">Consulta inicial gratuita</div>
+              <div class="step-desc">Conversamos sobre la situación, expectativas y necesidades para ver si podemos trabajar juntos.</div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-left">
+              <div class="step-num">2</div>
+              <div class="step-line"></div>
+            </div>
+            <div class="step-content">
+              <div class="step-title">Evaluación integral</div>
+              <div class="step-desc">Aplicación de instrumentos de evaluación y análisis del perfil de aprendizaje único de cada persona.</div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-left">
+              <div class="step-num">3</div>
+              <div class="step-line"></div>
+            </div>
+            <div class="step-content">
+              <div class="step-title">Devolución y plan de trabajo</div>
+              <div class="step-desc">Presentación de resultados y diseño colaborativo de un plan de intervención personalizado.</div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-left">
+              <div class="step-num">4</div>
+            </div>
+            <div class="step-content">
+              <div class="step-title">Seguimiento continuo</div>
+              <div class="step-desc">Sesiones de trabajo, ajustes según la evolución y comunicación permanente con familia y escuela.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- STORE / MATERIALES -->
+<section class="store" id="materiales">
+  <div class="container">
+    <div class="reveal" style="text-align:center;max-width:650px;margin:0 auto;">
+      <span class="section-label">Recursos descargables</span>
+      <h2 class="section-title">Materiales <span>Digitales</span></h2>
+      <p class="section-desc" style="margin:0 auto;">
+        Recursos prácticos, lúdicos y listos para usar. Diseñados con amor para acompañar el aprendizaje en casa o en el aula, evitando frustraciones y potenciando logros.
+      </p>
+    </div>
+
+    <div class="store-grid stagger">
+      <!-- Producto 1 -->
+      <div class="product-card">
+        <img src="assets/discalculia.png" alt="Cuadernillo de discalculia" class="product-img">
+        <div class="product-content">
+          <h3 class="product-title">Cuadernillo de discalculia</h3>
+          <div class="product-price">$ 15.000,00 ARS</div>
+          <div class="product-desc">Un material pensado para acompañar a niños y niñas que presentan desafíos con el aprendizaje de las matemáticas. Contiene actividades prácticas, coloridas y progresivas que facilitan la comprensión de números, operaciones y conceptos básicos, de manera clara y divertida.
+
+Ideal para docentes, familias y profesionales que buscan recursos listos para usar, con propuestas que estimulan la confianza, reducen la frustración y fortalecen el aprendizaje paso a paso.
+
+Con este cuadernillo, aprender matemáticas deja de ser un desafío imposible. Paola.Psicopé</div>
+          <a href="https://wa.me/5492324648952?text=Hola%20Paola!%20%F0%9F%91%8B%20Estoy%20interesado/a%20en%20adquirir%20el%20material%20digital:%20*Cuadernillo%20de%20Discalculia*.%20%E2%9E%97%20%C2%BFMe%20podr%C3%ADas%20indicar%20c%C3%B3mo%20realizar%20el%20pago?%20Muchas%20gracias!" target="_blank" class="product-btn">Comprar por WhatsApp</a>
+        </div>
+      </div>
+
+      <!-- Producto 2 -->
+      <div class="product-card">
+        <img src="assets/dislexia.jpg" alt="Dislexia. Actividades divertidas" class="product-img">
+        <div class="product-content">
+          <h3 class="product-title">Dislexia. Actividades divertidas para aprender mejor</h3>
+          <div class="product-price">$ 15.000,00 ARS <span class="product-price-old">$ 18.000,00 ARS</span></div>
+          <div class="product-desc">✨ Cuadernillo de Dislexia – 130 actividades ✨
+Un material completo y práctico, diseñado para acompañar a niños y niñas con dislexia en su proceso de aprendizaje.
+
+En este cuadernillo encontrarás:
+✅ 130 actividades progresivas que trabajan lectura, escritura y comprensión.
+✅ Ejercicios lúdicos y visuales que fortalecen la atención, la memoria y la motivación.
+✅ Propuestas claras, listas para usar en casa o en la escuela.
+✅ Actividades adaptadas para favorecer la confianza y reducir la frustración.
+
+💌 Disponible en formato digital, listo para recibir en tu WhatsApp o correo.</div>
+          <a href="https://wa.me/5492324648952?text=Hola%20Paola!%20%F0%9F%91%8B%20Estoy%20interesado/a%20en%20adquirir%20el%20material%20digital:%20*Cuadernillo%20de%20Dislexia*.%20%E2%9E%97%20%C2%BFMe%20podr%C3%ADas%20indicar%20c%C3%B3mo%20realizar%20el%20pago?%20Muchas%20gracias!" target="_blank" class="product-btn">Comprar por WhatsApp</a>
+        </div>
+      </div>
+
+      <!-- Producto 3 -->
+      <div class="product-card">
+        <img src="assets/disortografia.png" alt="Cuadernillo de disortografía" class="product-img">
+        <div class="product-content">
+          <h3 class="product-title">Cuadernillo de disortografía</h3>
+          <div class="product-price">$ 15.000,00 ARS</div>
+          <div class="product-desc">Este material está pensado para acompañar a niños y niñas que presentan errores frecuentes en la escritura, ofreciendo actividades claras, divertidas y progresivas.
+
+Con este cuadernillo vas a encontrar:
+✅ Ejercicios prácticos para mejorar la ortografía paso a paso.
+✅ Propuestas visuales y entretenidas que motivan al aprendizaje.
+✅ Recursos listos para que docentes, familias y profesionales puedan usar de inmediato.
+
+🌈 El objetivo es favorecer la confianza y el disfrute en el proceso de aprender a escribir. Formato digital listo para usar.</div>
+          <a href="https://wa.me/5492324648952?text=Hola%20Paola!%20%F0%9F%91%8B%20Estoy%20interesado/a%20en%20adquirir%20el%20material%20digital:%20*Cuadernillo%20de%20Disortograf%C3%ADa*.%20%E2%9E%97%20%C2%BFMe%20podr%C3%ADas%20indicar%20c%C3%B3mo%20realizar%20el%20pago?%20Muchas%20gracias!" target="_blank" class="product-btn">Comprar por WhatsApp</a>
+        </div>
+      </div>
+
+      <!-- Producto 4 -->
+      <div class="product-card">
+        <img src="assets/historias.jpg" alt="Historias que calman" class="product-img">
+        <div class="product-content">
+          <h3 class="product-title">Historias que calman</h3>
+          <div class="product-price">$ 10.000,00 ARS</div>
+          <div class="product-desc">✨ NOVEDAD: Historias para la Calma ✨
+¿Sabías que leer también puede ser una herramienta poderosa para aliviar la ansiedad?
+
+Este cuadernillo reúne relatos breves y sencillos pensados especialmente para:
+✅ Sacar el foco de la ansiedad y los pensamientos repetitivos.
+✅ Conectar con el interior desde un lugar de calma.
+✅ Acompañar momentos de estrés, pánico o inquietud.
+
+Son historias cálidas, fáciles de leer, que invitan a respirar, relajarse y volver a uno mismo. Formato digital listo para usar.</div>
+          <a href="https://wa.me/5492324648952?text=Hola%20Paola!%20%F0%9F%91%8B%20Estoy%20interesado/a%20en%20adquirir%20el%20material%20digital:%20*Historias%20que%20Calman*.%20%E2%9E%97%20%C2%BFMe%20podr%C3%ADas%20indicar%20c%C3%B3mo%20realizar%20el%20pago?%20Muchas%20gracias!" target="_blank" class="product-btn">Comprar por WhatsApp</a>
+        </div>
+      </div>
+
+      <!-- Producto 5 -->
+      <div class="product-card">
+        <img src="assets/guia-tea.png" alt="Guía práctica para docentes (TEA)" class="product-img">
+        <div class="product-content">
+          <h3 class="product-title">Guía práctica para docentes (TEA)</h3>
+          <div class="product-price">$ 15.000,00 ARS</div>
+          <div class="product-desc">Guía Resumida para Docentes con Alumnos con TEA.
+
+Estrategias claras, ejemplos reales y herramientas prácticas para acompañar con confianza e inclusión en el aula.
+
+Ideal para inicial, primaria o secundaria.
+👉 Lista para usar. Disponible en PDF. Autora: Paola Zabala. Psicopedagoga.</div>
+          <a href="https://wa.me/5492324648952?text=Hola%20Paola!%20%F0%9F%91%8B%20Estoy%20interesado/a%20en%20adquirir%20el%20material%20digital:%20*Gu%C3%ADa%20Docente%20TEA*.%20%E2%9E%97%20%C2%BFMe%20podr%C3%ADas%20indicar%20c%C3%B3mo%20realizar%20el%20pago?%20Muchas%20gracias!" target="_blank" class="product-btn">Comprar por WhatsApp</a>
+        </div>
+      </div>
+
+
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<div class="cta-band reveal">
+  <h2>¿Listo para dar el primer paso?</h2>
+  <p>La primera consulta es gratuita y sin compromiso. Conversemos sobre cómo puedo ayudarte.</p>
+  <a href="#contacto" class="btn-white">Escribime hoy</a>
+</div>
+
+<!-- CONTACT -->
+<section class="contact" id="contacto">
+  <div class="container">
+    <div class="contact-grid">
+
+      <div class="reveal from-left">
+        <span class="section-label">¿Hablamos?</span>
+        <h2 class="section-title">Tomá el <span>primer paso</span></h2>
+        <p class="section-desc" style="margin-bottom:2.5rem;">
+          Estoy acá para escucharte y acompañarte. Podés contactarme por cualquiera de estos medios o completar el formulario.
+        </p>
+        <div class="contact-info-item">
+          <div class="contact-icon">📱</div>
+          <div class="contact-info-text">
+            <strong>WhatsApp</strong>
+            <span>Consultas rápidas y turnos</span>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-icon">📧</div>
+          <div class="contact-info-text">
+            <strong>Email</strong>
+            <span>paolazabalapsp@gmail.com</span>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-icon">📍</div>
+          <div class="contact-info-text">
+            <strong>Ubicación</strong>
+            <span>Mercedes, Buenos Aires</span>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-icon">🕐</div>
+          <div class="contact-info-text">
+            <strong>Horarios (Solo con cita)</strong>
+            <span>Lun, Mar, Mié y Vie</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="reveal from-right">
+        <div class="contact-form">
+          <h3 style="font-family:'Nunito',sans-serif;font-weight:800;font-size:1.3rem;color:var(--text-dark);margin-bottom:1.5rem;">Solicitá tu consulta</h3>
+          <form id="contactForm">
+          <div class="form-group">
+            <label for="contact-name">Nombre completo</label>
+            <input type="text" id="contact-name" name="name" placeholder="Tu nombre y apellido" required>
+          </div>
+          <div class="form-group">
+            <label for="contact-email">Email</label>
+            <input type="email" id="contact-email" name="email" placeholder="tucorreo@email.com" required>
+          </div>
+          <div class="form-group">
+            <label for="contact-phone">Teléfono (opcional)</label>
+            <input type="tel" id="contact-phone" name="phone" placeholder="11 1234-5678">
+          </div>
+          <div class="form-group">
+            <label for="contact-audience">¿Para quién es la consulta?</label>
+            <select id="contact-audience" name="audience" required>
+              <option value="">Seleccioná una opción</option>
+              <option>Para mi hijo/a (4-12 años)</option>
+              <option>Para un adolescente</option>
+              <option>Para mí (adulto)</option>
+              <option>Asesoramiento docente/familiar</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="contact-message">Motivo de consulta</label>
+            <textarea id="contact-message" name="message" placeholder="Contame brevemente qué está pasando..." required></textarea>
+          </div>
+          <button type="submit" id="submitBtn" class="btn-primary" style="width:100%;justify-content:center;border-radius:14px;padding:1rem;">
+            Enviar consulta ✉️
+          </button>
+          <div id="formMessage" class="form-message"></div>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+</main>
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <!-- Col 1: Brand -->
+      <div class="footer-brand">
+        <div class="footer-logo">Psicopedagogía</div>
+        <p>Acompañamiento profesional y materiales digitales diseñados para potenciar el aprendizaje y bienestar emocional.</p>
+        <div class="footer-socials">
+          <a href="https://www.instagram.com/paola_psicope/?hl=es" target="_blank" class="social-link" aria-label="Instagram">
+            <svg style="width:20px;height:20px;fill:currentColor;" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.78-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.78 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.78.058-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.791-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.209-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+        </div>
+      </div>
+      <!-- Col 2: Quick Links -->
+      <div class="footer-col">
+        <div class="footer-col-title">Secciones</div>
+        <ul class="footer-links">
+          <li><a href="#sobre">Sobre mí</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#materiales">Materiales</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+      <!-- Col 3: Contact -->
+      <div class="footer-col">
+        <div class="footer-col-title">Contacto</div>
+        <ul class="footer-links">
+          <li><a href="https://wa.me/5492324648952" target="_blank">WhatsApp: +54 9 2324 648952</a></li>
+          <li><a href="mailto:paolazabalapsp@gmail.com">paolazabalapsp@gmail.com</a></li>
+          <li><a href="#">Mercedes, Buenos Aires</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <div>© 2025 Paola Zabala · Psicopedagoga</div>
+      <div>Todos los derechos reservados</div>
+    </div>
+  </div>
+</footer>
+
+<!-- WHATSAPP FLOAT -->
+<a href="https://wa.me/5492324648952" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Contactar por WhatsApp">
+  <div class="whatsapp-pulse"></div>
+  <span class="whatsapp-tooltip">¡Chateá conmigo!</span>
+  <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004c0 3.5 1.128 6.744 3.046 9.378L1.054 31.29l6.118-1.958A15.9 15.9 0 0016.004 32C24.826 32 32 24.826 32 16.004 32 7.176 24.826 0 16.004 0zm9.342 22.622c-.39 1.1-1.932 2.014-3.16 2.28-.84.18-1.936.322-5.628-1.21-4.722-1.96-7.76-6.748-7.994-7.062-.226-.314-1.886-2.512-1.886-4.792s1.194-3.402 1.618-3.868c.424-.466.924-.582 1.232-.582.308 0 .616.002.886.016.284.014.666-.108 1.042.794.39.934 1.326 3.232 1.442 3.466.116.234.194.508.038.82-.154.314-.232.508-.464.782-.232.274-.488.612-.698.822-.232.232-.474.484-.204.948.27.466 1.2 1.978 2.578 3.206 1.772 1.578 3.264 2.068 3.73 2.302.466.234.738.194 1.01-.116.272-.314 1.166-1.36 1.476-1.826.31-.466.62-.39 1.044-.234.424.156 2.704 1.276 3.168 1.508.466.232.776.35.892.542.116.194.116 1.1-.274 2.202z"/></svg>
+</a>
+
+<script>
+  // Navbar scroll effect
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 60);
+  });
+
+  // Hamburger menu
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('navLinks');
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    navLinks.classList.toggle('open');
+  });
+  document.querySelectorAll('#navLinks a').forEach(a => {
+    a.addEventListener('click', () => {
+      hamburger.classList.remove('active');
+      navLinks.classList.remove('open');
+    });
+  });
+
+  // IntersectionObserver for scroll animations
+  const revealEls = document.querySelectorAll('.reveal, .stagger');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15, rootMargin: '0px 0px -60px 0px' });
+  revealEls.forEach(el => observer.observe(el));
+
+  // Smooth scroll for anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      e.preventDefault();
+      const target = document.querySelector(a.getAttribute('href'));
+      if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  });
+
+  // Parallax blob movement on mouse
+  document.addEventListener('mousemove', e => {
+    const x = (e.clientX / window.innerWidth - 0.5) * 30;
+    const y = (e.clientY / window.innerHeight - 0.5) * 30;
+    document.querySelectorAll('.blob').forEach((b, i) => {
+      const factor = (i + 1) * 0.4;
+      b.style.transform = `translate(${x * factor}px, ${y * factor}px)`;
+    });
+  });
+
+  // Contact form submission
+  const form = document.getElementById('contactForm');
+  const submitBtn = document.getElementById('submitBtn');
+  const formMessage = document.getElementById('formMessage');
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    formMessage.className = 'form-message';
+    formMessage.textContent = '';
+
+    submitBtn.classList.add('btn-loading');
+    submitBtn.innerHTML = '<span class="spinner"></span>Redirigiendo...';
+
+    const name = document.getElementById('contact-name').value;
+    const email = document.getElementById('contact-email').value;
+    const phone = document.getElementById('contact-phone').value;
+    const audience = document.getElementById('contact-audience').value;
+    const message = document.getElementById('contact-message').value;
+
+    const text = `Hola Paola, mi nombre es ${name}.
+Email: ${email}
+Teléfono: ${phone || 'No provisto'}
+Consulta para: ${audience}
+
+Motivo de consulta:
+${message}`;
+
+    const whatsappUrl = `https://wa.me/5492324648952?text=${encodeURIComponent(text)}`;
+    window.open(whatsappUrl, '_blank');
+
+    submitBtn.classList.remove('btn-loading');
+    submitBtn.innerHTML = 'Enviar consulta ✉️';
+    formMessage.className = 'form-message success';
+    formMessage.textContent = '¡Redirigiendo a WhatsApp! 💜';
+    setTimeout(() => { form.reset(); formMessage.className = 'form-message'; }, 3000);
+  });
+</script>
+
+
+
+</body>
+</html>
