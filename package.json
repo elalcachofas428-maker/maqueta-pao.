@@ -1,8 +1,7 @@
 {
   "name": "psicopedagogia-paola",
   "version": "1.0.0",
-  "description": "Sitio web completo con backend Node.js para una psicopedagoga profesional. Incluye formulario de contacto funcional, sistema de emails, base de datos SQLite y panel de administración.",
-  "main": "images.js",
+  "description": "Sitio web profesional de Psicopedagogía",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -20,10 +19,12 @@
     "url": "https://github.com/elalcachofas428-maker/maqueta-pao./issues"
   },
   "homepage": "https://github.com/elalcachofas428-maker/maqueta-pao.#readme",
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
   "devDependencies": {
-    "@vitejs/plugin-react": "^6.0.1",
-    "react": "^19.2.5",
-    "react-dom": "^19.2.5",
-    "vite": "^8.0.10"
+    "@vitejs/plugin-react": "^4.3.4",
+    "vite": "^6.0.5"
   }
 }
